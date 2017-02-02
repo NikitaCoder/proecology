@@ -1,0 +1,79 @@
+/*====================Общие элементы========================*/
+
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+body{
+	background: #eaeaea;
+	padding: 30px 0;
+}
+p{
+	line-height: 1.8;
+}
+
+/*====================Бутстрап элементы======================*/
+
+.container{
+	width: 94%;
+	max-width: 1440px;
+	margin: 0 auto;
+	background: #fff;
+    box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+#carousel .item{
+	height: 420px;
+    background: url(../img/eco-slide-1.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+#carousel .item:nth-child(2){
+	background: url(../img/eco-slide-2.jpg) no-repeat;
+	background-size: cover;
+    background-position: 50%;
+}
+#carousel .item:nth-child(3){
+	background: url(../img/eco-slide-3.jpg) no-repeat;
+	background-size: cover;
+    background-position: 50%;
+}
+#carousel .carousel-caption {
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: absolute;
+    left: 5%;
+    max-width: 40%;
+}
+#carousel .carousel-text {
+    background-color: #555555;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 15px;
+    padding: 1rem 1.5rem;
+    text-align: left;
+    color: white;
+}
+#carousel .carousel-text a {
+    color: white;
+}
+.carousel-control{
+	width: 5%;
+}
+.btn-green {
+    background-color: #0FBE7C;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+    padding: 10px 15px;
+    padding: 1rem 1.5rem;
+    float: left;
+    margin-top: 15px;
+    font-size: 20px;
+}
+main .clients .client-img{
+    display: inline-block;
+    margin: 0 30px;
+}
+
