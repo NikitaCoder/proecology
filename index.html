@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta charset="utf-8">
+    <link rel="icon" href="img/favicon.ico">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
@@ -20,132 +21,105 @@
     <div class="container header">
       <header>
       <div class="row">
-        <a href="index.html" class="col-lg-4 col-md-4 col-sm-4">
+        <a href="index.html" class="col-sm-4">
           <img src="img/logo.jpg" class="logo" />
         </a>
-        <div class="col-lg-8 col-md-8 col-sm-8">
+        <div class="col-sm-8">
           <form role="search" method="get" class="search-form">
-            <input type="submit" class="search-submit" value="Search">
+            <input type="text" class="search form-control" placeholder="Поиск" />
+            <button type="submit" class="search-icon"></button>
           </form>
-          <div class="navbar navbar-default">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" 
-              data-target="#responsive-menu">
-                <span class="sr-only">Открыть навигацию</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div class="collapse navbar-collapse" id="responsive-menu">
-              <ul class="main-menu nav navbar-nav">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">О компании</a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Услуги <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Вода</a></li>
-                    <li><a href="#">Грунт</a></li>
-                    <li><a href="#">Воздух</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Библиотека</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </div>
-          </div>
+          <div id="responsive-menu">
+            <ul class="main-menu">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li class="services">
+                <a href="#">Услуги</a>
+                <ul class="dropdown-services">
+                  <li><a href="#">Воздух</a></li>
+                  <li><a href="#">Вода</a></li>
+                  <li><a href="#">Земля</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
         </div>
       </div>
       </header>
-      <div id="carousel" class="carousel slide">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#carousel" data-slide-to="0"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-          <li data-target="#carousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="item active">
-            <!-- <img src="img/eco-slide-1.jpg" alt=""> -->
-            <div class="carousel-caption">
-              <div class="carousel-text">
-                  <a href="#"><h3 class="h3">Clean Code</h3></a>
-                  <div class="carousel-content">
-                      <p>Cotton candy liquorice donut unerdwear.com caramels powder bonbon. Sugar plum fruitcake gummies. Brownie marshmallow jelly-o jelly beans. Gummi bears gummi bears jelly cheesecake jelly beans jelly beans fruitcake</p>
-                  </div>
-              </div>
-              <a href="#" class="btn-green">Read more</a>
+      <div class="top-slider">
+        <div class="top-slider-img">
+          <img src="img/eco-slide-1.jpg">
+          <div class="slide-desc-wrap hidden-xs">
+            <span class="slide-desc">Почитайте как мы очищаем воду и спасаем планету матушку! Почитайте как мы очищаем воду и спасаем планету матушку!</span>
+            <a href="services/water.index">Узнать больше</a>
             </div>
-          </div>
-          <div class="item">
-            <!-- <img src="img/eco-slide-2.jpg" alt=""> -->
-            <div class="carousel-caption">
-              <div class="carousel-text">
-                  <a href="#"><h3 class="h3">Clean Code</h3></a>
-                  <div class="carousel-content">
-                      <p>Cotton candy liquorice donut unerdwear.com caramels powder bonbon. Sugar plum fruitcake gummies. Brownie marshmallow jelly-o jelly beans. Gummi bears gummi bears jelly cheesecake jelly beans jelly beans fruitcake</p>
-                  </div>
-              </div>
-              <a href="#" class="btn-green">Read more</a>
-            </div>
-          </div>
-          <div class="item">
-            <!-- <img src="img/eco-slide-3.jpg" alt=""> -->
-            <div class="carousel-caption">
-              <div class="carousel-text">
-                  <a href="#"><h3 class="h3">Clean Code</h3></a>
-                  <div class="carousel-content">
-                      <p>Cotton candy liquorice donut unerdwear.com caramels powder bonbon. Sugar plum fruitcake gummies. Brownie marshmallow jelly-o jelly beans. Gummi bears gummi bears jelly cheesecake jelly beans jelly beans fruitcake</p>
-                  </div>
-              </div>
-              <a href="#" class="btn-green">Read more</a>
-            </div>
-          </div>
         </div>
-        <a href="#carousel" class="left carousel-control" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a href="#carousel" class="right carousel-control" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+        <div class="top-slider-img">
+          <img src="img/eco-slide-2.jpg">
+          <div class="slide-desc-wrap hidden-xs">
+            <span class="slide-desc">Почитайте как мы очищаем землю! Почитайте как мы очищаем воду и спасаем планету матушку!</span>
+            <a href="services/ground.index">Узнать больше</a>
+            </div>
+        </div>
+        <div class="top-slider-img">
+          <img src="img/eco-slide-3.jpg">
+
+          <div class="slide-desc-wrap hidden-xs">
+            <span class="slide-desc">Почитайте как мы очищаем воздух! Почитайте как мы очищаем воду и спасаем планету матушку!</span>
+            <a href="services/air.index">Узнать больше</a>
+            </div>
+        </div>
       </div>
     </div>
     <div class="container main">
       <main>
       <div class="row service-tabs">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-sm-12">
           <div class="tabs">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#tab-1" data-toggle="tab">Vkladka</a></li>
-              <li><a href="#tab-2" data-toggle="tab">Vkladka</a></li>
-              <li><a href="#tab-3" data-toggle="tab">Vkladka</a></li>
+              <li class="active"><a class="air-tab" href="#tab-1" data-toggle="tab">Воздух</a></li>
+              <li><a class="water-tab" href="#tab-2" data-toggle="tab">Вода</a></li>
+              <li><a class="ground-tab" href="#tab-3" data-toggle="tab">Земля</a></li>
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade in active" id="tab-1">
                 <div class="row">
-                  <div class="service-info col-lg-9 col-md-9 col-sm-9">
-                    <h3 class="service-name"></h3>
+                  <div class="service-info col-sm-9">
+                    <h3 class="service-name">Мы умеем такое и всякое</h3>
                     <p>Товарищи! начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание форм развития.</p>
+                    <a class="more-info" href="#">Узнать больше</a>
                   </div>
-                  <div class="service-img col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                  <div class="service-img col-sm-3 hidden-xs">
                     <img src="http://www.softengi.com/images/serv_icon_soft_dev.png">
                   </div>
                 </div>
                 <div class="row">
-                  <div class="service-info col-lg-9 col-md-9 col-sm-9">
-                    <h3 class="service-name"></h3>
+                  <div class="service-info col-sm-9">
+                    <h3 class="service-name">Мы умеем такое и всякое</h3>
                     <p>Товарищи! начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание форм развития.</p>
+                    <a class="more-info" href="#">Узнать больше</a>
                   </div>
-                  <div class="service-img col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                  <div class="service-img col-sm-3 hidden-xs">
+                    <img src="http://www.softengi.com/images/serv_icon_dev_centr.png">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="service-info col-sm-9">
+                    <h3 class="service-name">Мы умеем такое и всякое</h3>
+                    <p>Товарищи! начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание форм развития.</p>
+                    <a class="more-info" href="#">Узнать больше</a>
+                  </div>
+                  <div class="service-img col-sm-3 hidden-xs">
                     <img src="http://www.softengi.com/images/serv_icon_soft_dev.png">
                   </div>
                 </div>
               </div> 
               <div class="tab-pane fade" id="tab-2">
                 <div class="row">
-                  <div class="service-info col-lg-9 col-md-9 col-sm-9">
-                    <h3 class="service-name"></h3>
+                  <div class="service-info col-sm-9">
+                    <h3 class="service-name">Мы умеем такое и всякое</h3>
                     <p>Товарищи! начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание форм развития.</p>
+                    <a class="more-info" href="#">Узнать больше</a>
                   </div>
                   <div class="service-img col-lg-3 col-md-3 col-sm-3 hidden-xs">
                     <img src="http://www.softengi.com/images/serv_icon_dev_centr.png">
@@ -154,11 +128,12 @@
               </div>
               <div class="tab-pane fade" id="tab-3">
                 <div class="row">
-                  <div class="service-info col-lg-9 col-md-9 col-sm-9">
-                    <h3 class="service-name"></h3>
+                  <div class="service-info col-sm-9">
+                    <h3 class="service-name">Мы умеем такое и всякое</h3>
                     <p>Товарищи! начало повседневной работы по формированию позиции влечет за собой процесс внедрения и модернизации существенных финансовых и административных условий. Разнообразный и богатый опыт сложившаяся структура организации играет важную роль в формировании существенных финансовых и административных условий. Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание форм развития.</p>
+                    <a class="more-info" href="#">Узнать больше</a>
                   </div>
-                  <div class="service-img col-lg-3 col-md-3 col-sm-3 hidden-xs">
+                  <div class="service-img col-sm-3 hidden-xs">
                     <img src="http://www.softengi.com/images/serv_icon_soft_dev.png">
                   </div>
                 </div>
@@ -167,71 +142,27 @@
           </div>
         </div>
       </div>
-      <div class="row news">
-        <h3 class="h3-news">Новости</h3>
-        <div class="row">
-          <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-            <a href="#">
-              <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/legs-434918-162x102.jpg">
-              <h3>Why Do We Use It</h3>
-            </a>
-            <div class="news-info">
-              <p>
-                Cotton candy liquorice donut unerdwear.com caramels powder bonbon. Sugar plum fruitcake gummies. Brownie marshmallow jelly-o jelly beans. Gummi bears gummi bears jelly cheesecake jelly beans jelly beans fruitcake
-              </p>
-            </div>
-            <div class="news-date">
-              Dec 23,2013
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-            <a href="#">
-              <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/legs-434918-162x102.jpg">
-              <h3>Why Do We Use It</h3>
-            </a>
-            <div class="news-info">
-              <p>
-                Cotton candy liquorice donut unerdwear.com caramels powder bonbon. Sugar plum fruitcake gummies. Brownie marshmallow jelly-o jelly beans. Gummi bears gummi bears jelly cheesecake jelly beans jelly beans fruitcake
-              </p>
-            </div>
-            <div class="news-date">
-              Dec 23,2013
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-sm-4 col-xs-12">
-            <a href="#">
-              <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/legs-434918-162x102.jpg">
-              <h3>Why Do We Use It</h3>
-            </a>
-            <div class="news-info">
-              <p>
-                Cotton candy liquorice donut unerdwear.com caramels powder bonbon. Sugar plum fruitcake gummies. Brownie marshmallow jelly-o jelly beans. Gummi bears gummi bears jelly cheesecake jelly beans jelly beans fruitcake
-              </p>
-            </div>
-            <div class="news-date">
-              Dec 23,2013
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="row clients">
-        <div class="client-img">
-          <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-1.jpg">
-        </div>
-        <div class="client-img">
-          <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-6.jpg">
-        </div>
-        <div class="client-img">
-          <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-3.jpg">
-        </div>
-        <div class="client-img">
-          <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-4.jpg">
-        </div>
-        <div class="client-img">
-          <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-1.jpg">
-        </div>
-        <div class="client-img">
-          <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-6.jpg">
+        <h3>Наши клиенты</h3>
+        <div class="clients-wrap">
+          <div class="client-img">
+            <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-1.jpg">
+          </div>
+          <div class="client-img">
+            <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-6.jpg">
+          </div>
+          <div class="client-img">
+            <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-3.jpg">
+          </div>
+          <div class="client-img">
+            <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-4.jpg">
+          </div>
+          <div class="client-img">
+            <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-1.jpg">
+          </div>
+          <div class="client-img">
+            <img src="http://webriti.com/demo/wp/rambo/wp-content/uploads/2013/12/images-6.jpg">
+          </div>
         </div>
       </div>
       </main>
@@ -239,7 +170,7 @@
     <div class="container footer">
       <footer>
         <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="col-xs-4">
             <h5>Контакты</h5>
             <ul>
               <li>Sukedhara | Kathmandu | Nepal</li>
@@ -248,7 +179,7 @@
               <li>Website: www.proecology.com</li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="col-xs-4">
             <h5>Услуги</h5>
             <ul>
               <li><a href="">Услуга1</a></li>
@@ -258,7 +189,7 @@
               <li><a href="">Космос</a></li>
             </ul>
           </div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+          <div class="col-xs-4">
             <h5>О нас</h5>
             <p>Мы молодая команда, работаем на благо вселенной, мы крутые, го к нам, сotton candy liquorice donut unerdwear.com caramels powder bonbon. Sugar plum fruitcake gummies. Brownie marshmallow jelly-o jelly beans.</p>
           </div>
