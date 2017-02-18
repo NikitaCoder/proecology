@@ -639,3 +639,27 @@ form.search-form{
 .contact-email{
     background-image: url('../img/mail.png');
 }
+.home-link{
+    margin: 40px 0;
+    padding: 0 15px;
+    font-size: 26px;
+    line-height: 1.8;
+    text-transform: uppercase;
+}
+.home-link a{
+    font-family: 'roboto_condenseditalic';
+    font-size: 28px;
+    color: #66afe9;
+}
+.video-404{
+    border: 3px solid #0fbe7c;
+    display: inline-block;
+    margin: 0 0 50px 0;
+    width: 100%;
+}
+.video-404 iframe{   
+    width: 100% !important;
+    height: auto !important;
+    min-height: 500px;
+    margin: 0 0 -5px 0;
+}
